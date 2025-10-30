@@ -8,7 +8,7 @@
       .box {
         width: 70px;
         height: 70px;
-        background-color: teal;
+        background-color: rgb(248, 82, 57);
         font-size: 300%;
         text-align: center;
         user-select: none;
@@ -69,10 +69,7 @@
         //////////////////////////////////////////////////////////////////
 
         // TODO 2 - Variable declarations
-
-
-
-
+        var positionX = 0;
 
         /**
          * This Function will be called 20 times/second.
@@ -80,10 +77,11 @@
          * If the box drifts off the screen, turn it around!
          */
         function update() {
+          moveBoxTo(500);
+          positionX = positionX + 10; // Adds 10 to variableName
 
-        
 
-          
+
         }
 
         /**
@@ -98,10 +96,11 @@
 
 
 
+
         }
 
 
-        
+
       })();
     </script>
   </body>
